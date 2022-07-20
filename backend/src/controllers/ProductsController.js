@@ -84,6 +84,9 @@ class ProductsController {
   static add = (req, res) => {
     const { name, artisanId, picture, categoryId, description, price } =
       req.body;
+    const image = req.file.path;
+
+    // TODO validations (length, format...)
     let validationErrors = null;
 
     try {
@@ -111,8 +114,6 @@ class ProductsController {
 
       if (validationErrors) throw new Error("INVALID_DATA");
 
-      // TODO validations (length, format...)
-
       models.products
         .insert({ name, artisanId, picture, categoryId, description, price })
         .then(([result]) => {
@@ -123,6 +124,7 @@ class ProductsController {
             categoryId,
             description,
             price,
+            image,
             id: result.insertId,
           });
         })
