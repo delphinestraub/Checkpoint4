@@ -1,0 +1,12 @@
+section {
+    transform: rotate(0deg);
+    width: 400px;
+    height: 160px;
+}
+
+p {
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto 0 auto;
+    background-color: #557c75;
+}
