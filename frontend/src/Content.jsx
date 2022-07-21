@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import LayoutFront from "./components/Layout/LayoutFront";
 import LayoutAdmin from "./components/Layout/LayoutAdmin";
 import ContactForm from "./components/ContactForm";
-import DisplayProducts from "./components/DisplayProducts";
+import DisplayProducts from "./pages/DisplayProducts";
 import ProductsAdd from "./components/ProductsAdd";
 import Home from "./pages/Home";
 

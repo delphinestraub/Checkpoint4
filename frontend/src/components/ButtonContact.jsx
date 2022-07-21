@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./ButtonContact.css";
 
 export default function ButtonContact() {
   return (

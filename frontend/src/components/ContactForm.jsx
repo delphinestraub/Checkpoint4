@@ -10,7 +10,7 @@ export default function ContactForm() {
   return (
     <div className="contact">
       <form name="contact" method="post">
-        <label htmlFor="name">Prénom, nom *</label>
+        <label htmlFor="name">Prénom, nom </label>
         <input
           id="name"
           type="texte"
@@ -18,7 +18,7 @@ export default function ContactForm() {
           placeholder="Champ obligatoire"
         />
 
-        <label htmlFor="email">Email *</label>
+        <label htmlFor="email">Email </label>
         <input
           id="email"
           type="email"
