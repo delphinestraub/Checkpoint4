@@ -26,6 +26,20 @@ CREATE TABLE `artisan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+INSERT INTO `artisan` ( `id`,`name`) VALUES
+(1, `Delphine de Vigan`),
+(2, `Camille Claudel`),
+(4, `Tamara de Lempicka`),
+(5, `Paul Klee`),
+(6, `Pablo Picasso`),
+(7, `Suzanne Valadon`),
+(8, `Léonard de Vinci`),
+(9, `Frida Kalho`),
+(10, `Louise Bourgeois`),
+(11, `Niki de Saint Phalle`),
+(12, `Van Gogh`),
+(13 `Gustav Klimt`);
+
 --
 -- Table structure for table `category`
 --
@@ -37,6 +51,10 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+INSERT INTO `category` (`id`, `name`) VALUES
+(1, `Céramique`),
+(2, `Cuir`),
+(3, `Bijoux`);
 --
 -- Table structure for table `products`
 --
@@ -52,7 +70,7 @@ CREATE TABLE `products` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `products` (`id`, `name`, `artisand_id`, `picture`, `category_id`, `description`, `price` ) VALUES
+INSERT INTO `products` (`id`, `name`, `artisan_id`, `picture`, `category_id`, `description`, `price` ) VALUES
 (1, `Assiette bleue`, 2, https://www.sobeautiful.fr/wp-content/uploads/2021/08/29682.jpg, 1, Plat moyen, style Shabby, 14,90),
 (2, `Gobelets en couleur`, 1, https://fairemescourses.fr/data/shop/seclin_delphine-mantilla-poterie-madre-tierra-poterie-utilitaire-ceramique.jpg, 1, Gobelets en grès émaillé, 18,00),
 (3, `Vases`, 3, https://i0.wp.com/carnetsdunebretonne.fr/wp-content/uploads/2020/08/vases-alb-ceramique.jpg?resize=1170%2C550, 1, Vases en email de couleur, 25,00),
@@ -65,7 +83,7 @@ INSERT INTO `products` (`id`, `name`, `artisand_id`, `picture`, `category_id`, `
 (10, `Boucles d'oreilles feuilles bleu roi`, 10,https://i.etsystatic.com/9031291/r/il/d83f60/3844491781/il_794xN.3844491781_4gpc.jpg, 3, Boucles e laiton et verre, 12,00),
 (11, `Pendentif belle d'orient`,11,https://i0.wp.com/www.belledorient.com/wp-content/uploads/2021/07/IMG_20210730_162650-scaled.jpg?fit=2560%2C1920&ssl=1, 3, Sautoir, 40,00),
 (12, `Collier bohème`, 12,https://www.miaprovence.com/wp-content/uploads/2021/08/collier-boheme-chic-noir-150x150.jpg, 3, Pendentif en cordon torsadé, 49,00),
-(13, `Bague`, 13,https://aufildemaux.com/wp-content/uploads/2021/01/aufildemaux-cr%C3%A9ation-bague-offrir-bijou-occitanie-fait-main-975x650.jpg, 3, Bague fine ovale bleu roi, 42,00),
+(13, `Bague`, 13,https://aufildemaux.com/wp-content/uploads/2021/01/aufildemaux-cr%C3%A9ation-bague-offrir-bijou-occitanie-fait-main-975x650.jpg, 3, Bague fine ovale bleu roi, 42,00);
 
 
 

@@ -18,7 +18,7 @@ class ProductsManager extends AbstractManager {
 
   insert(products, image) {
     return this.connection.query(
-      `insert into ${ProductsManager.table} (image, name, artisanId, picture, categoryId, description, price) values (?, ?, ?, ?, ?, ?, ?)`,
+      `insert into ${ProductsManager.table} (name, artisan_id, picture, category_id, description, price) values (?, ?, ?, ?, ?, ?)`,
       [
         image,
         products.name,
@@ -33,7 +33,7 @@ class ProductsManager extends AbstractManager {
 
   update(products) {
     return this.connection.query(
-      `update ${ProductsManager.table} set name = ?, artisantId = ?, picture = ?, categoryId = ?, description = ?, price = ?, where id = ? `,
+      `update ${ProductsManager.table} set name = ?, artisant_Id = ?, picture = ?, category_Id = ?, description = ?, price = ?, where id = ? `,
       [
         products.data.name,
         products.name.artsanId,
