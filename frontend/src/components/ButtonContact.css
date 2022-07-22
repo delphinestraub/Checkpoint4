@@ -1,0 +1,9 @@
+.ButtonContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 8vw;
+  height: 8vh;
+  background-color: #557c75;
+}
