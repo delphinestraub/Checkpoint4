@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import LayoutFront from "./components/Layout/LayoutFront";
 import LayoutAdmin from "./components/Layout/LayoutAdmin";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./pages/ContactForm";
 import DisplayProducts from "./pages/DisplayProducts";
-import ProductsAdd from "./components/ProductsAdd";
+import ProductsList from "./pages/ProductsList";
 import Home from "./pages/Home";
 
 export default function Content() {
@@ -19,7 +19,7 @@ export default function Content() {
       {/* Admin routes */}
       <Routes>
         <Route path="/admin" element={<LayoutAdmin />} />
-        <Route index element={<ProductsAdd />} />
+        <Route path="/admin/products" element={<ProductsList />} />
       </Routes>
     </div>
   );

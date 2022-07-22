@@ -26,7 +26,7 @@ export default function ContactForm() {
           placeholder="Champ obligatoire"
         />
 
-        <label htmlFor="objet">Objet *</label>
+        <label htmlFor="objet">Objet</label>
         <input
           id="objet"
           type="objet"

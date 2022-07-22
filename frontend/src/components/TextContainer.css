@@ -1,12 +1,9 @@
-section {
-  transform: rotate(0deg);
-  width: 400px;
-  height: 160px;
-}
-
 p {
   position: fixed;
   display: grid;
+  padding-top: 3vh;
+  padding-left: -20vw;
+  padding-right: 30vw;
   grid-template-columns: auto 0 auto;
   background-color: #557c75;
 }

@@ -2,8 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import "./DisplayProducts.css";
-import "../components/ButtonContact.css";
-import { Link } from "react-router-dom";
 
 export default function DisplayProducts() {
   const [products, setProducts] = useState([]);
@@ -34,11 +32,6 @@ export default function DisplayProducts() {
             </div>
           </p>
         ))}
-      </div>
-      <div className="contact">
-        <Link className="ButtonContact" to="/contact">
-          Contact us
-        </Link>
       </div>
     </div>
   );

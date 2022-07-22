@@ -6,7 +6,7 @@ export default function ButtonContact() {
     <div>
       <div className="">
         <Link className="ButtonContact" to="/contact">
-          Contact Us
+          Contact
         </Link>
       </div>
     </div>
