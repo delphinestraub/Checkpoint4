@@ -1,13 +1,14 @@
 const express = require("express");
+const upload = require("./middlewares/Multerconfig");
 
-const { ItemController } = require("./controllers");
+const { ProductsController } = require("./controllers");
 
 const router = express.Router();
 
-router.get("/items", ItemController.browse);
-router.get("/items/:id", ItemController.read);
-router.put("/items/:id", ItemController.edit);
-router.post("/items", ItemController.add);
-router.delete("/items/:id", ItemController.delete);
+router.get("/products", ProductsController.browse);
+router.get("/products/:id", ProductsController.read);
+router.put("/products/:id", ProductsController.edit);
+router.post("/products", upload, ProductsController.add);
+router.delete("/products/:id", ProductsController.delete);
 
 module.exports = router;
